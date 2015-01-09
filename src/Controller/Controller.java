@@ -124,7 +124,8 @@ public class Controller {
             if (model.size() > 0) {
                 accioBotoPrimer();
             } else {
-                accioBotoNou();
+                view.activarTxtFieldsButtons();
+        view.esborrarTextFields();
             }
         } else {
             view.mostrarMissatge("Has escollit no esborrar el registre", "Informació");
@@ -144,7 +145,7 @@ public class Controller {
      */
     public void accioBotoPrimer() {
         view.posarInformacio(model.get(0));
-        view.actualitzarNumRegistre(model.getPosicioActual(), model.size());
+        view.actualitzarNumRegistre(1, model.size());
     }
 
     /**
