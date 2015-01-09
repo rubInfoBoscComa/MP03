@@ -5,13 +5,13 @@
  */
 package Model;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  *
  * @author Ruben
  */
-public class LlistaPersones extends ArrayList<Persona> {
+public class LlistaPersones extends LinkedList<Persona> {
 
     private int comptadorRegistres = 0;
 
